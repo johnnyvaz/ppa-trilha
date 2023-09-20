@@ -5,7 +5,7 @@ import { genPageMetadata } from 'app/seo'
 
 const POSTS_PER_PAGE = 5
 
-export const metadata = genPageMetadata({ title: 'Blog' })
+export const metadata = genPageMetadata({ title: 'Trilhas de Aprendizagem' })
 
 export default function TrilhaPage() {
   const posts = allCoreContent(sortPosts(allTrilhas))
