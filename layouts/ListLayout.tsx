@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { formatDate } from 'pliny/utils/formatDate'
 import { CoreContent } from 'pliny/utils/contentlayer'
-import type { Blog } from 'contentlayer/generated'
+import type { Trilha } from 'contentlayer/generated'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -14,9 +14,9 @@ interface PaginationProps {
   currentPage: number
 }
 interface ListLayoutProps {
-  posts: CoreContent<Blog>[]
+  posts: CoreContent<Trilha>[]
   title: string
-  initialDisplayPosts?: CoreContent<Blog>[]
+  initialDisplayPosts?: CoreContent<Trilha>[]
   pagination?: PaginationProps
 }
 
@@ -31,7 +31,7 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
       <nav className="flex justify-between">
         {!prevPage && (
           <button className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
-            Previous
+            Anterior
           </button>
         )}
         {prevPage && (
@@ -39,7 +39,7 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
             href={currentPage - 1 === 1 ? `/${basePath}/` : `/${basePath}/page/${currentPage - 1}`}
             rel="prev"
           >
-            Previous
+            Anterior
           </Link>
         )}
         <span>
@@ -47,12 +47,12 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
         </span>
         {!nextPage && (
           <button className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
-            Next
+            Próximo
           </button>
         )}
         {nextPage && (
           <Link href={`/${basePath}/page/${currentPage + 1}`} rel="next">
-            Next
+            Próximo
           </Link>
         )}
       </nav>
@@ -67,14 +67,14 @@ export default function ListLayout({
   pagination,
 }: ListLayoutProps) {
   const [searchValue, setSearchValue] = useState('')
-  const filteredBlogPosts = posts.filter((post) => {
+  const filteredTrilhaPosts = posts.filter((post) => {
     const searchContent = post.title + post.summary + post.tags?.join(' ')
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
   // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
+    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredTrilhaPosts
 
   return (
     <>
@@ -111,7 +111,7 @@ export default function ListLayout({
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && 'No posts found.'}
+          {!filteredTrilhaPosts.length && 'No posts found.'}
           {displayPosts.map((post) => {
             const { path, date, title, summary, tags } = post
             return (
