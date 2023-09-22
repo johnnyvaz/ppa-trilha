@@ -1,9 +1,9 @@
 const livroData = [
   {
     title: 'Método PPA - Prosseguindo para o Alvo',
-    description: `Sistema de Aprendizagem Baseado em Trilha`,
+    description: `Clique aqui e adquira o E-Book Sistema de Aprendizagem Baseado em Trilha`,
     imgSrc: '/static/images/link-livro.png',
-    href: '#',
+    href: 'https://pay.kiwify.com.br/LLOYoBk',
   }
 ]
 
