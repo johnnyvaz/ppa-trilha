@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Método PPA',
   author: 'Johnny Vaz',
   headerTitle: 'PPA',
-  description: 'Sistema de Aprendizagem Baseado em Trilha',
+  description: 'Contribua com este projeto',
   language: 'pt-br',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://ppa.systems/',
