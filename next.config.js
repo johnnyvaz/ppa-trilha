@@ -13,7 +13,7 @@ const ContentSecurityPolicy = `
   media-src *.s3.amazonaws.com;
   connect-src *;
   font-src 'self';
-  frame-src giscus.app 'Google Analytics'
+  frame-src giscus.app Analytics;
 `
 
 const securityHeaders = [
