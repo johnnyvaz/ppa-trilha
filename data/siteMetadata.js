@@ -15,7 +15,7 @@ const siteMetadata = {
   github: 'https://github.com/johnnyvaz',
   // twitter: '',
   // facebook: 'https://facebook.com',
-  // youtube: 'https://youtube.com',
+  youtube: 'https://www.youtube.com/channel/UCvR9c_6MQrGQE5Ny50k0Vww',
   linkedin: 'https://www.linkedin.com/in/johnnyjohnnyjohnnyvaz',
   whatsapp: 'https://chat.whatsapp.com/BCyaCJqc0xH25Nr8IEynlV',
   locale: 'pt-BR',
@@ -34,9 +34,9 @@ const siteMetadata = {
     // posthogAnalytics: {
     //   posthogProjectApiKey: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     // },
-    // googleAnalytics: {
-    //   googleAnalyticsId: '', // e.g. G-XXXXXXX
-    // },
+      googleAnalytics: {
+      googleAnalyticsId: 'G-6DJ3BJXCQB', // e.g. G-XXXXXXX
+    },
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
