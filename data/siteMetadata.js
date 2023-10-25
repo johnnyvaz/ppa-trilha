@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Método PPA',
   author: 'Johnny Vaz',
   headerTitle: 'PPA',
-  description: 'Contribua com este projeto',
+  description: 'Contribua com este projeto - https://github.com/johnnyvaz/ppa-trilha',
   language: 'pt-br',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://ppa.systems/',
