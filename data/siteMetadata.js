@@ -1,5 +1,4 @@
 /** @type {import("pliny/config").PlinyConfig } */
-import packagejson from "package.json";
 
 const siteMetadata = {
   title: 'Método PPA',
@@ -7,7 +6,6 @@ const siteMetadata = {
   headerTitle: 'PPA',
   description: 'O Método PPA é um sistema de aprendizagem baseado em trilha, que permite que você estude de forma mais objetiva e assertiva. Ele foi criado a partir da experiência pessoal do autor na transição para a área de desenvolvimento de software, e contém técnicas que foram aprendidas por meio dessa experiência.',
   language: 'pt-br',
-  version: packagejson.version,
   theme: 'dark', // system, dark or light
   siteUrl: 'https://ppa.systems/',
   siteRepo: 'https://github.com/johnnyvaz/ppa-blog',

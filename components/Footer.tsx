@@ -1,6 +1,7 @@
 import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
+const version = process.env.npm_package_version;
 
 export default function Footer() {
   return (
@@ -20,12 +21,14 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <div><strong>
-            <Link href="https://github.com/johnnyvaz/ppa-trilha/blob/main/CHANGELOG.md">Versão {siteMetadata.version}</Link>
+          <div>
+            <strong>
+              <Link href="https://github.com/johnnyvaz/ppa-trilha/blob/main/CHANGELOG.md">
+                Versão {version}
+              </Link>
             </strong>
           </div>
         </div>
-        
       </div>
     </footer>
   )
