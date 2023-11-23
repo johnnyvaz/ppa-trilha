@@ -20,11 +20,12 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
+          <div><strong>
+            <Link href="https://github.com/johnnyvaz/ppa-trilha/blob/main/CHANGELOG.md">Versão {siteMetadata.version}</Link>
+            </strong>
+          </div>
         </div>
-        <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://github.com/johnnyvaz/ppa-blog">PPA - Prosseguindo Para o Alvo</Link>
-        </div>
+        
       </div>
     </footer>
   )
