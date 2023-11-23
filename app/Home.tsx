@@ -15,7 +15,11 @@ export default function Home({ posts }) {
             Método de Estudo - PPA
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
+            {/* {siteMetadata.description} */}
+            O Método PPA é um sistema de aprendizagem baseado em trilha, que permite que você estude de forma mais objetiva e assertiva.
+             Ele foi criado a partir da experiência pessoal do autor na transição para a área de desenvolvimento de software,
+             e contém técnicas que foram aprendidas por meio dessa experiência. 
+         
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
