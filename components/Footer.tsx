@@ -1,7 +1,7 @@
 import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
-const version = process.env.npm_package_version;
+const version = process.env.npm_package_version
 
 export default function Footer() {
   return (
