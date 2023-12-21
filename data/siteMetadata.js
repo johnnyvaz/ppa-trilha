@@ -17,7 +17,7 @@ const siteMetadata = {
   // twitter: '',
   // facebook: 'https://facebook.com',
   youtube: 'https://www.youtube.com/channel/UCvR9c_6MQrGQE5Ny50k0Vww',
-  linkedin: 'https://www.linkedin.com/in/johnnyjohnnyjohnnyvaz',
+  linkedin: 'https://www.linkedin.com/in/johnnyvaz',
   whatsapp: 'https://chat.whatsapp.com/BCyaCJqc0xH25Nr8IEynlV',
   locale: 'pt-BR',
   analytics: {
